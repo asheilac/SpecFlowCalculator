@@ -11,3 +11,9 @@ Scenario: Add two numbers
 	And the second number is 70
 	When the two numbers are added
 	Then the result should be 120
+
+Scenario: Add one positive number and one negative number
+	Given the first number is 50
+	And the second number is -50
+	When the two numbers are added
+	Then the result should be 0
